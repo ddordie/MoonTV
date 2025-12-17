@@ -132,7 +132,7 @@
 
 ```bash
 # 拉取预构建镜像
-docker pull ghcr.io/senshinya/moontv:latest
+docker pull ghcr.io/ddordie/moontv:latest
 
 # 运行容器
 # -d: 后台运行  -p: 映射端口 3000 -> 3000
@@ -150,7 +150,7 @@ docker run -d --name moontv -p 3000:3000 --env PASSWORD=your_password ghcr.io/se
 ```yaml
 services:
   moontv:
-    image: ghcr.io/senshinya/moontv:latest
+    image: ghcr.io/ddordie/moontv:latest
     container_name: moontv
     restart: unless-stopped
     ports:
@@ -167,7 +167,7 @@ services:
 ```yaml
 services:
   moontv-core:
-    image: ghcr.io/senshinya/moontv:latest
+    image: ghcr.io/ddordie/moontv:latest
     container_name: moontv
     restart: unless-stopped
     ports:
